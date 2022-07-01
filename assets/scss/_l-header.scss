@@ -1,0 +1,55 @@
+.header {
+    padding: 0 1.25rem 1rem;
+    margin: 0 auto;
+    position: fixed;
+    display: grid;
+    grid-template-columns: .5fr .5fr 16fr 4fr;
+    grid-template-areas: "i1 i2 X2 X3";
+
+    &__heading {
+        margin-left: 1rem;
+        grid-area: X2;
+
+        &--hover {
+            @extend %custom-a;
+        }
+    }
+}
+
+.icon {
+    margin: auto auto;
+    display: flex;
+    grid-area: i2;
+
+    &__red {
+        background-color: red;
+        @extend %icon;
+    }
+
+    &__yellow {
+        background-color: orange;
+        @extend %icon;
+    }
+
+    &__green {
+        background-color: green;
+        @extend %icon;
+    }
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin: auto 0;
+    grid-area: X3;
+    padding-left: 0%;
+}
+
+.menu__item {
+    margin-right: 4rem;
+    font-size: 1.2rem;
+
+    &--hover {
+        @extend %custom-a;
+    }
+}
