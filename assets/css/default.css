@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Space+Mono&display=swap");
 article,
 aside,
 details,
@@ -261,6 +262,7 @@ html {
   -ms-grid-columns: .5fr .5fr 16fr 4fr;
       grid-template-columns: .5fr .5fr 16fr 4fr;
       grid-template-areas: "i1 i2 X2 X3";
+  top: 0;
 }
 
 .header__heading {
@@ -309,6 +311,63 @@ html {
   font-size: 1.2rem;
 }
 
+.menu__item--hover:hover {
+  color: #6DCCF9;
+  text-decoration: underline;
+}
+
+.hero {
+  margin-top: 6.25rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 16fr 2fr;
+      grid-template-columns: 2fr 16fr 2fr;
+      grid-template-areas: "X0 X1 X2";
+}
+
+.cli {
+  padding-top: 3rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: X1;
+}
+
+.cli--font {
+  font-family: "Space Mono";
+}
+
+.cli__item {
+  padding-bottom: 1.5rem;
+}
+
+.cli__item--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.entering__msg--font {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.entering__msg--red {
+  color: coral;
+}
+
+.entering__msg--keyword {
+  font-weight: 900;
+}
+
+.cli-title--font {
+  font-size: 4.5rem;
+}
+
+.description--font {
+  font-family: "Noto Sans TC";
+  font-size: 1.2rem;
+}
+
 btn {
   padding: .25rem .5rem;
   background-color: #6DCCF9;
@@ -317,5 +376,93 @@ btn {
 .linear-gray {
   background: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), to(white));
   background: linear-gradient(#dbdbdb, white);
+}
+
+.ls--1 {
+  letter-spacing: 0.1rem;
+}
+
+.ls--2 {
+  letter-spacing: 0.2rem;
+}
+
+.ls--3 {
+  letter-spacing: 0.3rem;
+}
+
+.ls--4 {
+  letter-spacing: 0.4rem;
+}
+
+.ls--5 {
+  letter-spacing: 0.5rem;
+}
+
+.lh--1_5 {
+  line-height: 1.5rem;
+}
+
+.lh--1_75 {
+  line-height: 1.75rem;
+}
+
+.lh--2 {
+  line-height: 2rem;
+}
+
+.lh--2_25 {
+  line-height: 2.25rem;
+}
+
+.lh--2_5 {
+  line-height: 2.5rem;
+}
+
+.lh--2_75 {
+  line-height: 2.75rem;
+}
+
+.lh--3 {
+  line-height: 3rem;
+}
+
+@-webkit-keyframes frame-animation {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes frame-animation {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.loading-animation {
+  margin: auto 0;
+  max-width: 3rem;
+  overflow: hidden;
+  font-size: 1.5rem;
+}
+
+.loading-frames {
+  -webkit-animation: frame-animation 500ms infinite;
+          animation: frame-animation 500ms infinite;
+  -webkit-animation-timing-function: steps(4);
+          animation-timing-function: steps(4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400%;
+}
+
+.loading-frame {
+  display: block;
+  width: 25%;
+  max-width: 25%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
 }
 /*# sourceMappingURL=default.css.map */

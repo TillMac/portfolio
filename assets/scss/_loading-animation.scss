@@ -1,0 +1,31 @@
+$time: 500ms;
+$number-of-frames: 4;
+$frame-duration: $time / $number-of-frames;
+
+@keyframes frame-animation {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.loading-animation {
+  margin: auto 0;
+  max-width: 3rem;
+  overflow: hidden;
+  font-size: 1.5rem;
+//   margin-bottom: 20px;
+}
+
+.loading-frames {
+  animation: frame-animation $time infinite;
+  animation-timing-function: steps($number-of-frames);
+  display: flex;
+  width: $number-of-frames * 100%; 
+}
+
+.loading-frame {
+  display: block;
+  width: 100% / $number-of-frames;
+  max-width: 100% / $number-of-frames;
+  flex-basis: 100% / $number-of-frames;
+}

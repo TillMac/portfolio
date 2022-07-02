@@ -4,3 +4,8 @@ $textColor-primary: #000;
 // Background 顏色
 $bgColor-1: rgb(219, 219, 219);
 $bgColor-2: rgb(255, 255, 255);
+
+// Cli 字體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Space+Mono&display=swap');
+$cliFontFamily: 'Space Mono';
+$chineseFontFamily: 'Noto Sans TC'

@@ -1,0 +1,54 @@
+.hero {
+    margin-top: 6.25rem;
+    display: grid;
+    grid-template-columns: 2fr 16fr 2fr;
+    grid-template-areas: "X0 X1 X2";
+};
+
+.cli {
+    padding-top: 3rem;
+    grid-area: X1;
+
+    &--font {
+        font-family: $cliFontFamily;
+    }
+
+    &__item {
+        padding-bottom: 1.5rem;
+
+        &--flex {
+            display: flex;
+        }
+    }
+}
+
+.entering{
+    &__msg {
+        &--font {
+            font-size: 1.2rem;
+            font-weight: 200;
+        }
+
+        &--red {
+            color: coral;
+        }
+
+        &--keyword {
+            font-weight: 900;
+        }
+
+    }
+}
+
+.cli-title {
+    &--font {
+        font-size: 4.5rem;
+    }
+}
+
+.description {
+    &--font {
+        font-family: $chineseFontFamily;
+        font-size: 1.2rem;
+    }
+};
