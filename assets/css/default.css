@@ -317,7 +317,8 @@ html {
 }
 
 .hero {
-  margin-top: 6.25rem;
+  margin-top: 6.5rem;
+  margin-bottom: 6.5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 16fr 2fr;
@@ -366,6 +367,101 @@ html {
 .description--font {
   font-family: "Noto Sans TC";
   font-size: 1.2rem;
+}
+
+.about-me {
+  width: 80%;
+  margin: auto;
+}
+
+.about-me--grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr .25fr 1fr;
+      grid-template-rows: 2fr .25fr 1fr;
+  -ms-grid-columns: 25% 25% 50%;
+      grid-template-columns: 25% 25% 50%;
+      grid-template-areas: "D D I" "O O O" "C C C";
+}
+
+.about-me__title {
+  margin: 0 auto;
+  width: 100%;
+  grid-area: T;
+}
+
+.about-me__title--font {
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+.about-me__description {
+  margin: 0 auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: D;
+}
+
+.about-me__description--font {
+  font-family: "Noto Sans TC";
+}
+
+.about-me__avatar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: I;
+}
+
+.about-me__list {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "L1 L2";
+}
+
+.about-me__list--1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: L1;
+}
+
+.about-me__list--2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: L2;
+}
+
+.about-me__icon {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: C;
+}
+
+.self-photo {
+  width: 80%;
+  padding-top: 1rem;
+  padding-left: 3rem;
+  border-radius: 999%;
+}
+
+.contact-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3rem;
+}
+
+.contact-me > a {
+  margin-right: 7.75%;
+}
+
+.contact-me__icon {
+  width: 3rem;
+  height: 3rem;
 }
 
 btn {

@@ -1,0 +1,79 @@
+.about-me {
+    width: 80%;
+    margin: auto;
+
+    &--grid {
+        display: grid;
+        grid-template-rows: 2fr .25fr 1fr;
+        grid-template-columns: 25% 25% 50%;
+        grid-template-areas:
+             "D D I"
+             "O O O"
+             "C C C";
+    }
+
+    &__title {
+        margin: 0 auto;
+        width: 100%;
+        grid-area: T;
+
+        &--font {
+            text-align: center;
+            font-size: 2.25rem;
+        }
+    }
+
+    &__description {
+        margin: 0 auto;
+        grid-area: D;
+
+        &--font {
+            font-family: $chineseFontFamily;
+        }
+    }
+
+    &__avatar {
+        grid-area: I;
+    }
+
+    &__list {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "L1 L2";
+
+        &--1 {
+            grid-area: L1;
+        }
+
+        &--2 {
+            grid-area: L2;
+        }
+    }
+
+    &__icon {
+        grid-area: C;
+    }
+}
+
+.self-photo {
+    width: 80%;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    border-radius: 999%;
+}
+
+.contact-me {
+    display: flex;
+    margin-left: 3rem;
+
+    & > a {
+
+        margin-right: 7.75%;
+    }
+
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+    }
+}
