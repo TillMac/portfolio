@@ -6,6 +6,7 @@
     grid-template-columns: .5fr .5fr 16fr 4fr;
     grid-template-areas: "i1 i2 X2 X3";
     top: 0;
+    z-index: 999;
 
     &__heading {
         margin-left: 1rem;
