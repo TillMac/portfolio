@@ -1,0 +1,30 @@
+.contact-me {
+  display: flex;
+
+  &__about{
+
+    margin-left: 3rem;
+    & > a {
+      margin-right: 7.75%;
+    }
+
+    &-icon {
+      width: 3rem;
+      height: 3rem;
+    }
+  } 
+
+
+  &__footer { 
+    display: inline-block;
+    width: 100%;
+    & > a {
+    margin-right: 3.75%;
+    }
+
+    &-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  } 
+}

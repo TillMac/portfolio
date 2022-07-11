@@ -452,16 +452,50 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contact-me__about {
   margin-left: 3rem;
 }
 
-.contact-me > a {
+.contact-me__about > a {
   margin-right: 7.75%;
 }
 
-.contact-me__icon {
+.contact-me__about-icon {
   width: 3rem;
   height: 3rem;
+}
+
+.contact-me__footer {
+  display: inline-block;
+  width: 100%;
+}
+
+.contact-me__footer > a {
+  margin-right: 3.75%;
+}
+
+.contact-me__footer-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer {
+  width: 100%;
+  padding: 2rem 0 .5rem;
+  text-align: center;
+}
+
+.footer__copyright-text {
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding-top: .5rem;
+}
+
+.footer__icon-copyright {
+  font-size: 0.8rem;
+  font-weight: 200;
 }
 
 btn {
@@ -472,6 +506,11 @@ btn {
 .linear-gray {
   background: -webkit-gradient(linear, left top, left bottom, from(#dbdbdb), to(white));
   background: linear-gradient(#dbdbdb, white);
+}
+
+.anti-linear-gray {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dbdbdb));
+  background: linear-gradient(white, #dbdbdb);
 }
 
 .ls--1 {

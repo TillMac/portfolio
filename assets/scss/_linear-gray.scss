@@ -1,3 +1,7 @@
 .linear-gray {
     background: linear-gradient($bgColor-1, $bgColor-2);
 }
+
+.anti-linear-gray {
+    background: linear-gradient($bgColor-2, $bgColor-1);
+}

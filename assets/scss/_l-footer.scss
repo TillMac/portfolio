@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  padding: 2rem 0 .5rem;
+  text-align: center;
+
+  &__copyright-text {
+    font-size: 0.8rem;
+    font-weight: 200;
+    padding-top: .5rem;
+  }
+
+  &__icon-copyright {
+    font-size: 0.8rem;
+    font-weight: 200;
+  }
+}
