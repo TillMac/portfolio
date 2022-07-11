@@ -1,0 +1,56 @@
+.irregular-shape {
+  position: absolute;
+  overflow: hidden;
+
+  &__egg {
+    // background: gray;
+    background: radial-gradient($bgColor-2, rgba(231, 213, 98, 0.427));;
+    border-radius: 82% 54% 59% 64% / 74% 49% 81% 62%;
+    height: 17vh;
+    width:29vh;
+    z-index: -1;
+    
+    top: 0;
+    left: 2.5%;
+    filter:  blur(30px);
+    transform: rotate(7.5deg);
+    overflow: inherit;
+  }
+
+  &__orangered-ball {
+    background: orangered;
+    border-radius: 61% 86% 51% 76% / 74% 49% 75% 71%;
+    height: 17vh;
+    width:19vh;
+
+    top: 7.5%;
+    right: 30%;
+    z-index: -1;
+    overflow: inherit;
+  }
+
+  &__green-ball {
+    background: #54a324;
+    border-radius: 52% 87% 52% 95% / 77% 68% 74% 70%;
+    height: 17vh;
+    width:42vh;
+
+    transform: rotate(352.5deg);
+    bottom: 10%;
+    right: 20%;
+    z-index: -1;
+    overflow: inherit;
+  }
+
+  &__blue-ball {
+    background: #61C1EB;
+    border-radius: 37% 100% 52% 100% / 77% 68% 74% 70%;
+    height: 25vh;
+    width:14vh;
+
+    transform: rotate(45deg);
+    bottom: 15%;
+    right: 12.5%;
+  }
+
+}

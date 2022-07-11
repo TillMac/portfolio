@@ -1,6 +1,12 @@
 .about-me {
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    &__content {
+        margin: auto;
+        width: 80%;
+    }
 
     &--grid {
         display: grid;
